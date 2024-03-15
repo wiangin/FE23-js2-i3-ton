@@ -1,0 +1,133 @@
+:root{
+    --btn-bg-color: violet;
+    --bd-bg-color: rgb(30, 29, 29);
+    --text-color-white : white;
+    --text-color-black : black;
+    --border-color: rgb(235, 235, 235);
+    --box-shadow-color: rgb(200, 195, 195)
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: var(--bd-bg-color);
+    color: var(--text-color-white);
+}
+header div{
+    margin: 0.5rem 0 0 1.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+header form{
+    margin: auto;  
+}
+header input{
+    border: none;
+    padding: 2.7px; 
+    border-radius: 5px 0 0 5px;
+}
+header input{
+    width: 65%;
+    border: none;
+    padding: 5px;
+    outline: none;
+    padding-left: 5px;
+}
+header button{
+    margin-top: 0.5rem;
+    margin-left: -4px;
+    border-radius: 0px 5px 5px 0;
+    background-color: var(--btn-bg-color);
+    padding: 5px;
+    color: var(--text-color-black);
+    border: none;
+    cursor: pointer;
+}
+
+#productHeader{
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+.productCardStyle{
+    border: 1px solid var(--border-color);
+    margin: 1.5rem;
+    padding: 0.5rem ;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 2px var(--box-shadow-color);
+    /* text-align: center; */
+}
+
+img{
+    width: 300px;
+}
+
+.addBtnStyle{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-bg-color);
+    font-size: large;
+    cursor: pointer;
+}
+
+dialog{
+    border: none;
+    border-radius: 10px;
+}
+dialog button{
+    position: relative;
+    right: -280px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+::backdrop{
+    background-color: var(--bd-bg-color);
+    opacity: 0.9;
+}
+
+@media(min-width: 450px){
+    header{
+        height: 90px;
+    }
+    header div{
+        margin: auto;
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    header form{
+        margin: auto;  
+    }
+}
+@media(min-width: 750px){
+
+    img{
+        width: 400px;
+    }
+    .productCardStyle{
+        border: 1px solid var(--border-color);
+        margin: 1.5rem;
+        padding: 1rem ;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px 2px var(--box-shadow-color);
+        display: flex;
+        gap: 10rem;
+    }
+    .addBtnStyle{
+        width: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--btn-bg-color);
+        font-size: large;
+        cursor: pointer;
+    }
+}
